@@ -1,0 +1,12 @@
+{
+  "development": {
+    "RESOURCE_URL_ENTITY": "https://awovcw7p76.execute-api.us-east-1.amazonaws.com/dev/entity/v2.1/entities/",
+    "APP_URL": "localhost",
+    "PORT": 5000
+  },
+  "production": {
+    "RESOURCE_URL_ENTITY": "https://awovcw7p76.execute-api.us-east-1.amazonaws.com/dev/entity/v2.1/entities/",
+    "APP_URL": "localhost",
+    "PORT": 5000
+  }
+}

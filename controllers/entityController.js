@@ -2,12 +2,14 @@ const axios = require('axios');
 const response = require('../response');
 const validation = require('../helpers/validation');
 require('dotenv').config();
+const env = process.env.NODE_ENV || 'development';
+const config = require('../config.json')[ env ];
 
 let getArrayWithURLs = (idInicio, idFinal) => {
         let arrayWithURLs = [];
         idInicio = idInicio || 1;
         for (let i = idInicio ; i <= idFinal ; i++) {
-            let URL = process.env.RESOURCE_URL_ENTITY + i;
+            let URL = config.RESOURCE_URL_ENTITY + i;
             arrayWithURLs.push(URL);
         }
         return arrayWithURLs;

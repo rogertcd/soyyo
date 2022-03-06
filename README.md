@@ -11,7 +11,7 @@ Test for Soyyo
 ## Demo
 hacer click en el siguiente enlace para poder ver un demo de la app
 
-[Click aquí](https://soyyo-test.herokuapp.com)
+[Click aquí](https://soyyo-test.herokuapp.com/apidoc)
 
 ## Requerimientos
 
@@ -39,7 +39,7 @@ O en su versión de desarrollo
 
  API desarrollada en Node.js usando Express
 
-> /api/entities/filter
+> https://soyyo-test.herokuapp.com/api/entities/filter
 
 Este API realiza el filtrado de entidades y las ordena alfabéticamente en orden ascendente, para lo cual es necesario dos parámetros:
 
