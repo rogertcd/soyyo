@@ -1,0 +1,8 @@
+{
+  "name": "Soyyo Test API REST",
+  "version": "1.0.0",
+  "description": "API REST de prueba para Soyyo",
+  "template": {
+    "forceLanguage": "es"
+  }
+}
