@@ -1,11 +1,7 @@
-FROM ubuntu:latest
-MAINTAINER ROGERT rogertg@msn.com
-RUN apt update
-RUN apt -y install nodejs
-RUN apt -y install npm
-expose 5000
-RUN mkdir /var/www/rogweb/
-CMD /var/www/rogweb/
-RUN git clone https://github.com/rogertcd/soyyo.git
-CMD soyyo
-RUN npm start
+FROM node:16-alpine
+WORKDIR /home/rogert/app
+COPY package*.json ./
+RUN npm install
+EXPOSE 5000
+COPY . .
+CMD [ "node", "app.js" ]
